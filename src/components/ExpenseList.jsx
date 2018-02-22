@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ExpenseListItem from './ExpenseListItem.jsx';
 import selectExpenses from '../selectors/expenses';
 
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
   <div>
     {
       props.expenses.length === 0 ? (
@@ -23,5 +23,5 @@ const mapStateToProps = (state) => {
   };
 };
 
-//export default connect(mapStateToProps)(ExpenseList);
-export default ExpenseList;
+export default connect(mapStateToProps)(ExpenseList);
+//export default ExpenseList;
