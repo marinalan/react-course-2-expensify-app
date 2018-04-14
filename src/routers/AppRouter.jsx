@@ -8,6 +8,7 @@ import HelpPage from '../components/HelpPage.jsx';
 import NotFoundPage from '../components/NotFoundPage.jsx';
 import LoginPage from '../components/LoginPage.jsx';
 import PrivateRoute from './PrivateRoute.jsx';
+import PublicRoute from './PublicRoute.jsx';
 
 export const history = createHistory();
 
