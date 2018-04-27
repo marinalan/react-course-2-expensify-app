@@ -16,7 +16,7 @@ module.exports = (env) => {
 
   console.log('env', env);
   return {
-    entry: './src/app.jsx',
+    entry: ['babel-polyfill', './src/app.jsx'],
     //entry: './src/playground/hoc.jsx',
     output: {
       path: path.join(__dirname, 'public', 'dist'),
